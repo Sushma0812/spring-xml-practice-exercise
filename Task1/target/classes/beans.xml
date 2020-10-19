@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean id="actorOne" class="com.stackroute.domain.Actor">
+<property name="name" value="Priya"/>
+<property name="gender" value="female"/>
+<property name="age" value="30"/>
+</bean>
+<bean id="actorTwo" class="com.stackroute.domain.Actor">
+<property name="name" value="Abhi"/>
+<property name="gender" value="male"/>
+<property name="age" value="32"/>
+</bean>
+<bean id="movieA" class="com.stackroute.domain.Movie">
+<property name="actor" ref="actorOne"/>
+</bean>
+<bean id="movieB" class="com.stackroute.domain.Movie">
+<property name="actor" ref="actorTwo"/>
+</bean>
+</beans>
